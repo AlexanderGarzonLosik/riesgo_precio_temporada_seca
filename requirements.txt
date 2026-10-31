@@ -1,0 +1,10 @@
+ipykernel==7.3.0
+matplotlib==3.11.1
+numpy==2.4.6
+pandas==2.3.3  # menor que 3.0, la versión 3 es incompatible con pydataxm
+psycopg2-binary==2.9.12
+pydataxm==0.3.18
+python-dotenv==1.2.4
+seaborn==0.13.2
+SQLAlchemy==2.0.52
+statsmodels==0.15.0

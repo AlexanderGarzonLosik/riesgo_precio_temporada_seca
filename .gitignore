@@ -1,0 +1,17 @@
+# Credenciales
+.env
+
+# Archivos de trabajo local (no se publican)
+extraction/extraer_datos.py
+sql/verificaciones.sql
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Archivos temporales de Windows y Office
+desktop.ini
+Thumbs.db
+~$*
