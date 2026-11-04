@@ -1,5 +1,16 @@
 # Riesgo de precio en temporada seca. Mercado eléctrico colombiano
 
+**In English.** A data analysis project on what drives the Colombian electricity spot price when water is scarce, using the last twelve years of public data.
+
+1. **Extract.** I downloaded the data from XM and NOAA with Python.
+2. **Model.** I built a star schema in PostgreSQL with SQL.
+3. **Analyze.** I studied the data in Python with correlations, price quartiles and a regression.
+4. **Present.** I built two Power BI dashboards and wrote a report.
+
+**[Read the full report in English](report/report_en.md).**
+
+---
+
 Proyecto de análisis de datos sobre el precio de bolsa de la energía en Colombia. Descarga desde mediados del 2014 hasta la actualidad datos públicos de XM y de la NOAA, los organiza en un modelo estrella en PostgreSQL, los analiza en Python y los presenta en dos tableros de Power BI.
 
 **Pregunta.** ¿Qué mueve el precio de bolsa en Colombia cuando falta el agua?
@@ -113,6 +124,7 @@ riesgo_precio_temporada_seca/
 │   └── Modelo_Datos_PowerBI.png
 ├── report/
 │   ├── reporte.md                Resumen ejecutivo
+│   ├── report_en.md              Resumen ejecutivo en inglés
 │   └── images/
 ├── requirements.txt
 ├── .env.example
