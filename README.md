@@ -65,7 +65,7 @@ flowchart LR
 
 1. **Extracción** (`extraction/extraer_datos.ipynb`). Descarga de XM el precio de bolsa horario, la generación por planta, los aportes hídricos y su media histórica, el volumen y la capacidad útil de los embalses, la capacidad efectiva neta por planta y el listado de recursos. Descarga de la NOAA el índice ONI, que clasifica cada mes como El Niño, La Niña o Neutral teniendo en cuenta un umbral de ±0,5 °C. Carga diez tablas al esquema `raw`.
 2. **Transformación** (`sql/`). Seis scripts que se corren en orden y reconstruyen el esquema `star` desde `raw`.
-3. **Análisis** (`notebooks/analisis_datos.ipynb`). Controles de calidad, series de tiempo, correlaciones, regresión, fases ENSO y cuartiles de precio.
+3. **Análisis** (`sql/analisis/` y `notebooks/analisis_datos.ipynb`). Seis consultas sobre el esquema `star`, con CTE, funciones de ventana y subconsultas. En Python, controles de calidad, series de tiempo, correlaciones, regresión, fases ENSO y cuartiles de precio.
 4. **Visualización** (`dashboard/`). Dos tableros de Power BI conectados al esquema `star` desde PostgreSQL.
 
 ## Modelo de datos
@@ -112,7 +112,9 @@ riesgo_precio_temporada_seca/
 │   ├── 03_dim_enso.sql
 │   ├── 04_fact_diario_sistema.sql
 │   ├── 05_fact_generacion_recurso.sql
-│   └── 06_fact_capacidad_recurso.sql
+│   ├── 06_fact_capacidad_recurso.sql
+│   └── analisis/
+│       └── analisis_star.sql     Consultas de análisis
 ├── notebooks/
 │   └── analisis_datos.ipynb      Análisis y regresión
 ├── dashboard/

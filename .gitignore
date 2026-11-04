@@ -5,6 +5,9 @@
 extraction/extraer_datos.py
 sql/verificaciones.sql
 
+# Configuración local del editor
+.vscode/
+
 # Python
 __pycache__/
 .ipynb_checkpoints/
